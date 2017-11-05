@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    tools:context="com.example.technoforrest.bulldogbites.FoodMenuActivity">
+
+
+    <ImageView
+        android:id="@+id/pizzaView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:onClick="onButtonClicked"
+        android:clickable="true"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/pizza"
+        android:tag="Pizza"/>
+
+    <ImageView
+        android:id="@+id/burgerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:clickable="true"
+        android:onClick="onButtonClicked"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/hamburger"
+        android:tag="Burger"/>
+
+    <TextView
+        android:id="@+id/pizzaPrice"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight=".5"
+        android:scaleType="fitCenter"
+        android:text="$9.99"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/burgerPrice"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight=".5"
+        android:scaleType="fitCenter"
+        android:text="$5.99"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/saladView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:onClick="onButtonClicked"
+        android:clickable="true"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/salad"
+        android:tag="Salad"/>
+
+    <ImageView
+        android:id="@+id/beerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:onClick="onButtonClicked"
+        android:clickable="true"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/beer"
+        android:tag="Beer"/>
+
+    <TextView
+        android:id="@+id/saladPrice"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight=".5"
+        android:scaleType="fitCenter"
+        android:text="$6.99"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/beerPrice"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight=".5"
+        android:scaleType="fitCenter"
+        android:text="$3.99"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        />
+</GridLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="3">
+
+    <ImageView
+        android:id="@+id/pizzaActivityView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight=".5"
+        android:layout_columnSpan="3"
+        android:scaleType="fitCenter"
+        android:layout_margin="10dp"
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/pizza" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:text="Gluten Free" />
+
+    <Switch
+        android:id="@+id/glutenFreeSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:layout_gravity="right"
+        android:checked="false"
+        android:onClick="switchButtonClicked"
+        />
+
+    <TextView
+        android:id="@+id/glutenPriceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"/>
+    <RadioGroup
+        android:id="@+id/classStandingRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/redSauceButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Red Sauce"
+            android:checked="false"
+            android:onClick="radiobuttonClicked"/>
+
+        <RadioButton
+            android:id="@+id/whiteSauceButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="White Sauce"
+            android:checked="false"
+            android:onClick="radiobuttonClicked"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/saucePriceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</GridLayout>
