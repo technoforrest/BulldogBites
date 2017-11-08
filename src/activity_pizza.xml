@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="4">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="659dp"
+                    android:columnCount="3">
+
+                    <ImageView
+                        android:id="@+id/pizzaImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_columnSpan="3"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="0.5"
+                        android:scaleType="fitCenter"
+                        android:tag="Pizza"
+                        app:srcCompat="@drawable/pizza" />
+
+                    <TextView
+                        android:id="@+id/glutenFreeText"
+                        android:layout_width="161dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnSpan="1"
+                        android:text="Gluten Free"
+                        android:textSize="24sp" />
+
+                    <Switch
+                        android:id="@+id/glutenFreeSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnSpan="1"
+                        android:layout_gravity="right"
+                        android:checked="false"
+                        android:onClick="switchButtonClicked" />
+
+                    <TextView
+                        android:id="@+id/glutenPriceText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnSpan="1"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:text="$0.00" />
+
+                    <RadioGroup
+                        android:id="@+id/classStandingRadioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/redSauceButton"
+                            android:layout_width="111dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnSpan="2"
+                            android:checked="false"
+                            android:onClick="radiobuttonClicked"
+                            android:text="Red Sauce" />
+
+                        <RadioButton
+                            android:id="@+id/whiteSauceButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_columnSpan="2"
+                            android:checked="false"
+                            android:onClick="radiobuttonClicked"
+                            android:text="White Sauce" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/saucePriceText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnSpan="2"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:text="$0.00" />
+
+
+                    <TextView
+                        android:id="@+id/CheeseText"
+                        android:layout_width="117dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnSpan="1"
+                        android:text="Cheese"
+                        android:textSize="24sp" />
+
+                    <SeekBar
+                        android:id="@+id/cheeseSeekBar"
+                        android:layout_width="79dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnSpan="1"
+                        android:layout_gravity="left"
+                        android:onClick="seekBarClicked"
+                        android:layout_row="2"/>
+
+                    <TextView
+                        android:id="@+id/cheesePriceText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnSpan="1"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:text="$0.00" />
+
+                    <CheckBox
+                        android:id="@+id/pepperoniCheck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnSpan="2"
+                        android:layout_weight="1"
+                        android:onClick="onPepperoniCheckboxClicked"
+                        android:text="Pepperoni"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/pepperoniPriceText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnSpan="1"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:text="$0.00" />
+
+                    <CheckBox
+                        android:id="@+id/italianSausageCheck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnSpan="2"
+                        android:layout_weight="1"
+                        android:onClick="onItalianSausageCheckboxClicked"
+                        android:text="Italian Sausage"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/italianSausagePriceText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnSpan="1"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:text="$0.00" />
+
+                    <CheckBox
+                        android:id="@+id/chickenCheck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnSpan="2"
+                        android:layout_weight="1"
+                        android:onClick="onChickenCheckboxClicked"
+                        android:text="Chicken"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/chickenPriceText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnSpan="1"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:text="$0.00" />
+
+                    <TextView
+                        android:id="@+id/totalText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnSpan="1"
+                        android:text="Total:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                    <TextView
+                        android:id="@+id/totalEdit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnSpan="1"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                </GridLayout>
+            </LinearLayout>
+        </ScrollView>
+    </GridLayout>
